@@ -63,13 +63,10 @@ nav a:hover {
 /* INTRO START */
 #intro{
   display: flex;
-  margin-top:100px;
-  
+  margin-top:150px;
 }
 
 #intro-info{
-  display: flex;
-  justify-content: center;
   position: relative;
   padding-right:5%;
   top:45%;
@@ -78,7 +75,6 @@ nav a:hover {
 
 #intro-image{
   position: relative;
-  float:right;
 }
 
 #intro-container{
@@ -93,31 +89,23 @@ nav a:hover {
 
 #about-me-text{
   padding: 25px;
+  padding-top: 0px;
   border-radius: 10px;
   font-size: 20px;
   text-align: center;
 }
 
-#intro-social-media{
-  display: flex;
-  justify-content: right;
-}
-
-.social-media-icons{
-  height: 50px;
-  margin: 10px;
-}
 /* INTRO END */
 
 @media screen and (max-width: 910px) {
   #intro-info{
-    position: relative;
-    margin: auto;
+    width:100%;
   }
-
+  #intro{
+    display:block;
+  }
   #intro-image{
-    position: relative;
-    top: 300px;
+    text-align: center;
   }
 }
 
@@ -125,10 +113,13 @@ nav a:hover {
 
 /* ABOUT ME START */
 #about-me{
-  padding-top: 50px;
-  display: flex;
-  width: 100%;
-  justify-content: center;
+  scroll-margin-top: 100px;
+  padding: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: auto;
+  display: table;
+  margin: 0 auto;
 }
 
 
@@ -158,20 +149,6 @@ nav a:hover {
 .card ul{
   margin-left: 30px;
 }
-
-@media screen and (max-width: 1740px) {
-  #about-me-text{
-    width: 85%;
-    margin: auto;
-    display: inline-block;
-  }
-  
-  #cards{
-    width: 100%;
-  }
-}
-
-
 /* ABOUT ME END */
 
 
@@ -180,7 +157,6 @@ nav a:hover {
 #previous-projects{
   padding: 50px;
 }
-
 
 #slideshow-container{
   margin: auto;
@@ -192,11 +168,9 @@ nav a:hover {
   box-shadow: 3px 6px 9px 0px rgba(0, 0, 0, 0.18);
 }
 
-
 .slide{
   display: none;
 }
-
 
 .slide img{
   float: left;
@@ -236,13 +210,11 @@ nav a:hover {
   background-color: #303f94;
 }
 
-
 .dot-container{
   position: absolute;
   bottom:40px;
   left:48%;
 }
-
 
 .dot{
   height: 15px;
@@ -259,22 +231,43 @@ nav a:hover {
   background-color: #3849AA;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .slide img{
     display: none;
     width:0;
   }
   #slideshow-container{
-    width:80%;
-    height: 600px;
+    height: 750px;
+    width:90%;
+    display:table;
   }
   .slide-info{
     width:100%;
   }
   .dot-container{
-   bottom:40px;
+   bottom:80px;
    left: 50px;
   }
 }
 
 /* PREVIOUS PROJECTS END */
+
+
+/* FOOTER START */
+
+footer{
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+
+#social-media-icons-container{
+  display: flex;
+  justify-content: right;
+}
+
+.social-media-icons{
+  height: 50px;
+  margin: 10px;
+}
+
+/* FOOTER END */

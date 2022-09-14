@@ -43,7 +43,7 @@ nav a:hover {
 
 #form{
   position: absolute;
-  top: 30%;
+  top: 25%;
   left:20%;
 }
 /* FORM END */
@@ -76,23 +76,29 @@ img{
 
 /* FORM START */
 input[type=text], textarea{
-  padding: 6px;
-  width:300px;
+  margin: 8px 0;
+  padding: 8px 10px;
+  width: 500px;
   border: 1px solid #ccc;
   border-radius: 4px;
 	font-family:'Segoe UI';
+  font-size: 16px;
   resize: none;
+}
+
+label{
+  font-size: 18px;
 }
 
 #button{
   background-color:#3849AA;
   color:#F0F0F0;
-	font-weight:bold;
+  font-size: large;
 	font-family:'Segoe UI';
 	border:0;
-	padding:6px 12px;
+	padding:8px 16px;
   float:right;
-  margin-top: 5px;
+  margin-top: 15px;
 }
 
 
