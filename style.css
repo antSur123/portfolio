@@ -8,6 +8,7 @@ body{
 
 
 /* NAVBAR START */
+
 nav{
   background-color:#3849AA;
   position:fixed;
@@ -38,10 +39,9 @@ nav a:hover {
   }
 }
 
-/* NAVBAR END */
-
 
 /* BACKGROUND START */
+
 #background{
   top:80px;
   position: absolute;
@@ -57,10 +57,9 @@ nav a:hover {
   border-radius: 0 100% 0 0;
 }
 
-/* BACKGROUND END */
-
 
 /* INTRO START */
+
 #intro{
   display: flex;
   margin-top:150px;
@@ -95,14 +94,14 @@ nav a:hover {
   text-align: center;
 }
 
-/* INTRO END */
 
 @media screen and (max-width: 910px) {
   #intro-info{
-    width:100%;
+    width:auto;
   }
   #intro{
-    display:block;
+
+  flex-direction: column;
   }
   #intro-image{
     text-align: center;
@@ -110,8 +109,8 @@ nav a:hover {
 }
 
 
-
 /* ABOUT ME START */
+
 #about-me{
   scroll-margin-top: 100px;
   padding: 50px;
@@ -149,21 +148,22 @@ nav a:hover {
 .card ul{
   margin-left: 30px;
 }
-/* ABOUT ME END */
 
 
 /* PREVIOUS PROJECTS START */
 
 #previous-projects{
   padding: 50px;
+  display: inline-flex;
 }
 
 #slideshow-container{
   margin: auto;
-  width: 800px;
-  height: 500px;
+  display: inline-flex;
+  flex-direction: column;
   background: #F0F0F0;
   border-radius: 50px;
+  width:80%;
   position: relative;
   box-shadow: 3px 6px 9px 0px rgba(0, 0, 0, 0.18);
 }
@@ -174,7 +174,7 @@ nav a:hover {
 
 .slide img{
   float: left;
-  height: 500px;
+  height: auto;
   width: 45%;
   object-fit: cover;
   border-radius: 50px 0 0 50px;
@@ -182,7 +182,6 @@ nav a:hover {
 
 .slide-info{
   text-align: center;
-  padding-top: 10px;
   float: right;
   width: 55%;
   height: 100%;
@@ -190,6 +189,13 @@ nav a:hover {
 
 .slide-info p{
   padding: 10px;
+}
+
+.button-container{
+  margin:40px;
+  position: absolute;
+  bottom:0;
+  right:0;
 }
 
 .slide-button{
@@ -200,9 +206,6 @@ nav a:hover {
   font-size: 16px;
   padding: 10px 30px;
   cursor: pointer;
-  position: absolute;
-  bottom: 30px;
-  right: 50px;
 }
 
 .slide-button:hover {
@@ -212,8 +215,8 @@ nav a:hover {
 
 .dot-container{
   position: absolute;
-  bottom:40px;
-  left:48%;
+  bottom: 40px;
+  left: 48%;
 }
 
 .dot{
@@ -236,21 +239,25 @@ nav a:hover {
     display: none;
     width:0;
   }
+  /*
   #slideshow-container{
     height: 750px;
     width:90%;
     display:table;
   }
+  */
   .slide-info{
     width:100%;
   }
   .dot-container{
-   bottom:80px;
-   left: 50px;
+    position:static;
+    display: flex;
+    margin:40px;
+    bottom:0;
+    right:0;
   }
 }
 
-/* PREVIOUS PROJECTS END */
 
 
 /* FOOTER START */
@@ -269,5 +276,3 @@ footer{
   height: 50px;
   margin: 10px;
 }
-
-/* FOOTER END */

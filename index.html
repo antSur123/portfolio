@@ -10,12 +10,19 @@
 
 <!--
 24h 35 min 
+15:00
 
   https://blog.hootsuite.com/social-media-icons/
 
   https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_col-s 
 
-code validator
+Make propper responmsivity on smaller screens
+
+Make cards responsive sizes
+
+Comment on parts you need to do
+
+Write documentation on how all parts where made
 -->
 
 
@@ -27,8 +34,9 @@ code validator
     <div id="wave"></div>
   </div>
 
+<!-- NAV -->
   <nav>
-    <a href="#top">Top</a>
+    <a href="#home">Home</a>
     <a href="#about-me">About Me</a>
     <a href="#previous-projects">Previous Projects</a>
     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" rel="noopener" target="_blank" class="right">My CV</a>
@@ -37,6 +45,7 @@ code validator
   
 
 
+ <!-- INTRO SECTION -->
   <div id="intro">
     <div id="intro-info">      
       <div id="intro-text">
@@ -60,8 +69,8 @@ code validator
 
   </div>
   
-
-  <div id="about-me">
+ <!-- ABOUT ME SECTION -->
+  <div id="about-me" style="display:none;">
     <div class="card">
       <img src="images/education.jpg" alt="Books">
       <div class="card-text">
@@ -100,15 +109,19 @@ code validator
       </div>
   </div>
 
+  
+ <!-- PREVIOUS PROJECTS SECTION -->
   <div id="previous-projects">
-
     <div id="slideshow-container">
       <div class="slide">
         <img src="images/pr1.png" alt="Info dump website">
         <div class="slide-info">
           <h1>Timestuff</h1>
-          <p>Timestuff is a website that acts like a dump for my Minecraft data pack projects I want to publish. I update this website manually. I particularly like this website because it's very simplistic. I also like it because it uses accordion menus as an easy way to store and axcess a lot of info without it all cluttering the website. Another part that I'm proud of is the YouTube video. I spent countless hours making that cursed piece of javascript do the correct thing. But it ended up looking catchy.</p>
-          <a class="slide-button" href="https://teotire.github.io/TimeStuff/" target="_blank">Visit</a>
+          <p>Timestuff is a website that acts like a dump for my Minecraft data pack projects I want to publish. I update this website manually. I particularly like this website because it's very simplistic. I also like it because it uses accordion menus as an easy way to store and axcess a lot of info without it all cluttering the website. Another part that I'm proud of is the YouTube video. I spent countless hours making a cursed piece of javascript display the correct video. And eventually, it ended up looking catchy.</p>
+          <div class="button-container">
+            <a class="slide-button" href="https://teotire.github.io/TimeStuff/" target="_blank">Visit</a>
+          </div>
+          
         </div>
       </div>
 
@@ -117,7 +130,9 @@ code validator
         <div class="slide-info">
          <h1>Saucy Server</h1>
           <p>The Saucy Server Website is a web store/news page/business for a Minecraft server a girl nicknamed Saucy ran. That was the intended use of the website anyway. I wanted the website to be a place for the political news of the political movements across the server. I even made a part where all the candidates had a place to display what they stood for. I also wanted the in-game shops to have an opportunity to show what they were selling. The business idea was quite good and would have made me rich. In-game, of course. All my clients were to pay me monthly for a place on the webpage. A day or two after I deployed the first version of the webpage, I heard that two of my friends had been telling everyone that no one should cooperate with me. I left the server a few days later, and the website remains.</p>
+          <div class="button-container">
           <a class="slide-button" href="https://Saucy-Server.timescoop.repl.co" target="_blank">Visit</a>
+          </div>
        </div>
      </div>
 
@@ -126,7 +141,9 @@ code validator
         <div class="slide-info">
          <h1>Teotire</h1>
          <p>Teotire is a project that I hold close to my heart. It's one of the very first deployed websites. The inspiration behind this one is one of my close friends. He had a lot of opinions about controversial and inside-joke things, and I wanted him to have a place to tell the world about what he got on his mind. I consider the website to be of the conspiratorial-article sort, and I have a good laugh about the memories that come when I read the crazy stories he produced.</p>
+         <div class="button-container">
         <a class="slide-button" href="https://teotire.timescoop.repl.co" target="_blank">Visit</a>
+        </div>
        </div>
      </div>
 
@@ -135,7 +152,9 @@ code validator
        <div class="slide-info">
          <h1>Kolener</h1>
           <p>Kolener is a fun little HTML challenge I set for myself. The challenge aimed to create a sort of search engine template. I went with a darkish design because I simply believe it looks better. I also advocate light mode being a horrible choice for anything that shouldn't look boring. I'm pretty proud of what I made. I think that Google should pay attention to how well everything turned out on the webpage. A detail, however, is that the navigation bar on the top looks tiny. Most of my websites before this one has very small navbars. Otherwise, I believe it's a work of art worthy of all good-looking search engine prizes.</p>
+          <div class="button-container">
          <a class="slide-button" href="https://Kolener.timescoop.repl.co" target="_blank">Visit</a>
+          </div>
         </div>
       </div>
 
@@ -149,6 +168,7 @@ code validator
      </div>
   </div>
 
+ <!-- FOOTER  -->
   <footer>
    <div id="social-media-icons-container">
      <a href="https://www.instagram.com/" rel="noopener" target="_blank">
