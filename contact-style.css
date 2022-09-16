@@ -36,7 +36,6 @@ nav a:hover {
   }
 }
   
-/* NAVBAR END */
 
 
 /* FORM START */
@@ -46,7 +45,6 @@ nav a:hover {
   top: 25%;
   left:20%;
 }
-/* FORM END */
 
 /* IMAGE START */
 #img-container{
@@ -61,18 +59,8 @@ img{
   width:100%;
   height:100%;
 }
-/* IMAGE START */
 
 
-@media screen and (max-width: 800px) {
-  #form{
-    left:30%;
- }
-    
-  .image{
-      display: none;
-  }
-}
 
 /* FORM START */
 input[type=text], textarea{
@@ -107,4 +95,22 @@ label{
   background-color:#303f94;
 }
 
-/* FORM END */
+@media screen and (max-width: 1400px) {
+  #content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ #form{
+  left:auto;
+ }
+    
+  .image{
+    display: none;
+  }
+
+  input[type=text], textarea{
+  width: 90vw;
+  max-width: 500px;
+  }
+}
