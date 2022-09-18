@@ -273,6 +273,7 @@ footer{
 #social-media-icons-container{
   display: flex;
   justify-content: right;
+  flex-wrap:wrap;
 }
 
 .social-media-icons{
