@@ -1,22 +1,28 @@
-/* set setInterval to 15000 */
+/* run showSlides every 15 sec */
 function startInterval(){
-  Interval = setInterval(showSlides, 15000000);
+  Interval = setInterval(showSlides, 15000);
 }
 
+
+/* show first slide */
 let slideIndex = 1;
 showSlides(slideIndex);
 
-function currentSlide(n){
+
+/* set slide */
+function setSlide(n){
   clearInterval(Interval);
   showSlides(slideIndex = n);
   startInterval();
 }
 
+
+/* switch slide */
 function showSlides(n){
   let i;
   let slides = document.getElementsByClassName("slide");
-  
   let dots = document.getElementsByClassName("dot");
+
   if (n < 1){
     slideIndex = slides.length
   }

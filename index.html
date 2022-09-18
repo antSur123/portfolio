@@ -9,19 +9,11 @@
 </head>
 
 <!--
-27h 30 min 
+  Approximatley 28h 30 min of coding
 
   https://blog.hootsuite.com/social-media-icons/
 
-  https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_col-s 
-
-Make propper responmsivity on smaller screens
-
-Make cards responsive sizes
-
-Comment on parts you need to do
-
-Write documentation on how all parts where made
+  https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_col-s
 -->
 
 
@@ -29,6 +21,7 @@ Write documentation on how all parts where made
 <body onload="showSlides(), startInterval()">
   <script src="script.js"></script>
 
+<!-- BACKGROUND -->
   <div id="home">
     <div id="wave"></div>
   </div>
@@ -62,14 +55,14 @@ Write documentation on how all parts where made
       </div>
     </div>
 
-    <div id="intro-image">
-      <img src="images/me.png" alt="Photo of a man">
+    <div id="intro-image-container">
+      <img src="images/me.png" alt="Photo of a man" id="intro-image">
     </div>
 
   </div>
   
  <!-- ABOUT ME SECTION -->
-  <div id="about-me" style="display:none;">
+  <div id="about-me">
     <div class="card">
       <img src="images/education.jpg" alt="Books">
       <div class="card-text">
@@ -120,7 +113,6 @@ Write documentation on how all parts where made
           <div class="button-container">
             <a class="slide-button" href="https://teotire.github.io/TimeStuff/" target="_blank">Visit</a>
           </div>
-          
         </div>
       </div>
 
@@ -159,10 +151,10 @@ Write documentation on how all parts where made
 
 
       <div class="dot-container">
-       <span class="dot" onclick="currentSlide(1)"></span> 
-       <span class="dot" onclick="currentSlide(2)"></span> 
-       <span class="dot" onclick="currentSlide(3)"></span> 
-       <span class="dot" onclick="currentSlide(4)"></span>
+       <span class="dot" onclick="setSlide(1)"></span> 
+       <span class="dot" onclick="setSlide(2)"></span> 
+       <span class="dot" onclick="setSlide(3)"></span> 
+       <span class="dot" onclick="setSlide(4)"></span>
       </div>
      </div>
   </div>

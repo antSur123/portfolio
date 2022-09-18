@@ -5,6 +5,7 @@ body{
   margin:0;
 }
 
+
 /* NAVBAR START */
 nav{
   background-color:#3849AA;
@@ -37,14 +38,13 @@ nav a:hover {
 }
   
 
-
 /* FORM START */
-
 #form{
   position: absolute;
   top: 25%;
   left:20%;
 }
+
 
 /* IMAGE START */
 #img-container{
@@ -59,7 +59,6 @@ img{
   width:100%;
   height:100%;
 }
-
 
 
 /* FORM START */
@@ -99,18 +98,17 @@ label{
   #content{
     display: flex;
     justify-content: center;
-    align-items: center;
  }
- #form{
-  left:auto;
- }
+  #form{
+   left:auto;
+  }
     
   .image{
     display: none;
   }
 
   input[type=text], textarea{
-  width: 90vw;
-  max-width: 500px;
+    width: 90vw;
+    max-width: 500px;
   }
 }
